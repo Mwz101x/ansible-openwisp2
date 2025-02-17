@@ -1,15 +1,15 @@
 ---
 
 dependencies:
-  - src: https://github.com/openwisp/Stouts.postfix
+  - src: https://github.com/Mwz101x/Stouts.postfix.git
     version: origin/main
     name: Stouts.postfix
     when: openwisp2_postfix_install
     postfix_smtp_sasl_auth_enable: "{{ postfix_smtp_sasl_auth_enable_override | default(false) }}"
     postfix_smtpd_relay_restrictions: "{{ postfix_smtpd_relay_restrictions_override }}"
 
-  - src: https://github.com/openwisp/ansible-ow-influxdb
-    version: origin/master
+  - src: https://github.com/Mwz101x/ansible-ow-influxdb.git
+    version: origin/develop
     name: openwisp.influxdb
     when: openwisp2_monitoring and openwisp2_influxdb_install
 

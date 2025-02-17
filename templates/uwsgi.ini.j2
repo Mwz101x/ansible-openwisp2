@@ -2,7 +2,7 @@
 chdir={{ openwisp2_path }}
 uid=www-data
 module=openwisp2.wsgi:application
-master=True
+develop=True
 pidfile={{ openwisp2_path }}/uwsgi.pid
 socket={{ openwisp2_uwsgi_socket }}
 processes={{ openwisp2_uwsgi_processes }}
